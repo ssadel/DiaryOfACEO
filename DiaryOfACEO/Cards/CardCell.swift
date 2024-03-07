@@ -14,23 +14,26 @@ struct CardCell<Content: View>: View {
         case card(Card)
     }
     
-    init(card: Card) where Content == EmptyView {
+    init(card: Card, width: CGFloat = UIScreen.width * 0.85) where Content == EmptyView {
         self.data = .card(card)
+        self.width = width
     }
-    init(@ViewBuilder content: @escaping () -> Content) {
+    init(@ViewBuilder content: @escaping () -> Content, width: CGFloat = UIScreen.width * 0.85) {
         self.data = .view(content())
+        self.width = width
     }
     
     var data: CardData
+    var width: CGFloat
     
     var body: some View {
         ZStack {
             background
             content
         }
-        .aspectRatio(3/4, contentMode: .fit)
-        .frame(width: UIScreen.width * 0.85)
-        .clipped()
+        .aspectRatio(0.7, contentMode: .fit)
+        .frame(width: width)
+        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
     
     @ViewBuilder
