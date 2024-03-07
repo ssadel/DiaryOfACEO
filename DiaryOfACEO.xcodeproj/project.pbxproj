@@ -55,7 +55,7 @@
 				C27CC8512B9A2DB200AB3AB1 /* App */,
 				C27CC8532B9A2DDE00AB3AB1 /* Assets */,
 				C27CC8542B9A2DE700AB3AB1 /* Config */,
-				C27CC8522B9A2DC600AB3AB1 /* Views */,
+				C27CC8552B9A2E2500AB3AB1 /* Onboarding */,
 				C27CC8492B9A280400AB3AB1 /* Preview Content */,
 			);
 			path = DiaryOfACEO;
@@ -73,16 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				C27CC8422B9A280300AB3AB1 /* DiaryOfACEOApp.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		C27CC8522B9A2DC600AB3AB1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
 				C27CC8442B9A280300AB3AB1 /* MasterView.swift */,
 			);
-			path = Views;
+			path = App;
 			sourceTree = "<group>";
 		};
 		C27CC8532B9A2DDE00AB3AB1 /* Assets */ = {
@@ -99,6 +92,13 @@
 				C27CC8482B9A280400AB3AB1 /* DiaryOfACEO.entitlements */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		C27CC8552B9A2E2500AB3AB1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +316,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -324,10 +324,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sidneysadel.DiaryOfACEO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,7 +355,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -362,10 +363,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sidneysadel.DiaryOfACEO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
