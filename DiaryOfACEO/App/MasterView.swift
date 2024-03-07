@@ -13,18 +13,20 @@ struct MasterView: View {
     var body: some View {
         ZStack {
             if !viewModel.didUserGetOnboarded {
-                // onboarding view
+                OnboardingView()
             } else if !viewModel.isLoggedIn {
                 // login view
             } else {
                 HomeView()
             }
         }
+        .animation(.easeInOut, value: viewModel.didUserGetOnboarded)
+        .animation(.easeInOut, value: viewModel.isLoggedIn)
     }
 }
 
 final class MasterViewModel: ObservableObject {
-    @Published private(set) var didUserGetOnboarded: Bool = true
+    @Published private(set) var didUserGetOnboarded: Bool = false // TODO: imp
     @Published private(set) var isLoggedIn: Bool = true // TODO: imp
     
     init() {
