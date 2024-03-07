@@ -18,6 +18,7 @@
 		C27CC8662B9A324000AB3AB1 /* UIScreen+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8652B9A324000AB3AB1 /* UIScreen+Ex.swift */; };
 		C27CC8682B9A33E800AB3AB1 /* View+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8672B9A33E800AB3AB1 /* View+Ex.swift */; };
 		C27CC86A2B9A33FD00AB3AB1 /* UINavigationController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8692B9A33FD00AB3AB1 /* UINavigationController+Ex.swift */; };
+		C27CC86C2B9A368500AB3AB1 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC86B2B9A368500AB3AB1 /* OnboardingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C27CC8652B9A324000AB3AB1 /* UIScreen+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Ex.swift"; sourceTree = "<group>"; };
 		C27CC8672B9A33E800AB3AB1 /* View+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ex.swift"; sourceTree = "<group>"; };
 		C27CC8692B9A33FD00AB3AB1 /* UINavigationController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ex.swift"; sourceTree = "<group>"; };
+		C27CC86B2B9A368500AB3AB1 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				C27CC85A2B9A2FDC00AB3AB1 /* OnboardingView.swift */,
+				C27CC86B2B9A368500AB3AB1 /* OnboardingViewModel.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				C27CC85B2B9A2FDC00AB3AB1 /* OnboardingView.swift in Sources */,
 				C27CC8682B9A33E800AB3AB1 /* View+Ex.swift in Sources */,
 				C27CC8602B9A305100AB3AB1 /* ButtonStyle+Ex.swift in Sources */,
+				C27CC86C2B9A368500AB3AB1 /* OnboardingViewModel.swift in Sources */,
 				C27CC86A2B9A33FD00AB3AB1 /* UINavigationController+Ex.swift in Sources */,
 				C27CC8452B9A280300AB3AB1 /* MasterView.swift in Sources */,
 				C27CC8432B9A280300AB3AB1 /* DiaryOfACEOApp.swift in Sources */,

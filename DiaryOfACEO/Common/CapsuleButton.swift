@@ -10,14 +10,14 @@ import SwiftUI
 struct CapsuleButton: View {
     enum WidthMode {
         case maxWidth
-        case value(CGFloat)
+        case minWidth(CGFloat = UIScreen.width / 2.75)
     }
     
     var text: String
     var action: () -> Void
     var foregroundColor: Color = .black
     var backgroundColor: Color = .white
-    var widthMode: WidthMode = .value(UIScreen.width / 2.5)
+    var widthMode: WidthMode = .minWidth()
     
     var body: some View {
         Button {
@@ -33,7 +33,7 @@ struct CapsuleButton: View {
             .font(.headline)
             .foregroundStyle(foregroundColor)
             .closure { view in
-                if case .value(let width) = widthMode {
+                if case .minWidth(let width) = widthMode {
                     view
                         .frame(minWidth: width)
                 } else {
@@ -42,6 +42,7 @@ struct CapsuleButton: View {
                 }
             }
             .padding(.vertical, 12)
+            .padding(.horizontal)
             .background(
                 Capsule(style: .continuous)
                     .fill(.white)
@@ -50,5 +51,5 @@ struct CapsuleButton: View {
 }
 
 #Preview {
-    CapsuleButton(text: "text", action: {}, widthMode: .maxWidth)
+    CapsuleButton(text: "textasdsadas", action: {})
 }
