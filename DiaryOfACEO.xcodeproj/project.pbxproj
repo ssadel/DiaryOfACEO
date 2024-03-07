@@ -19,6 +19,8 @@
 		C27CC8682B9A33E800AB3AB1 /* View+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8672B9A33E800AB3AB1 /* View+Ex.swift */; };
 		C27CC86A2B9A33FD00AB3AB1 /* UINavigationController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8692B9A33FD00AB3AB1 /* UINavigationController+Ex.swift */; };
 		C27CC86C2B9A368500AB3AB1 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC86B2B9A368500AB3AB1 /* OnboardingViewModel.swift */; };
+		C27CC8702B9A3BA900AB3AB1 /* CardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC86F2B9A3BA900AB3AB1 /* CardScrollView.swift */; };
+		C27CC8722B9A3BB900AB3AB1 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8712B9A3BB900AB3AB1 /* CardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		C27CC8672B9A33E800AB3AB1 /* View+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ex.swift"; sourceTree = "<group>"; };
 		C27CC8692B9A33FD00AB3AB1 /* UINavigationController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ex.swift"; sourceTree = "<group>"; };
 		C27CC86B2B9A368500AB3AB1 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		C27CC86F2B9A3BA900AB3AB1 /* CardScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScrollView.swift; sourceTree = "<group>"; };
+		C27CC8712B9A3BB900AB3AB1 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			children = (
 				C27CC8512B9A2DB200AB3AB1 /* App */,
 				C27CC8532B9A2DDE00AB3AB1 /* Assets */,
+				C27CC86E2B9A3B5600AB3AB1 /* Cards */,
 				C27CC85C2B9A300A00AB3AB1 /* Common */,
 				C27CC8542B9A2DE700AB3AB1 /* Config */,
 				C27CC8562B9A2F3F00AB3AB1 /* Home */,
@@ -149,6 +154,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C27CC86E2B9A3B5600AB3AB1 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				C27CC86F2B9A3BA900AB3AB1 /* CardScrollView.swift */,
+				C27CC8712B9A3BB900AB3AB1 /* CardCell.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,12 +237,14 @@
 				C27CC8582B9A2F4A00AB3AB1 /* HomeView.swift in Sources */,
 				C27CC85B2B9A2FDC00AB3AB1 /* OnboardingView.swift in Sources */,
 				C27CC8682B9A33E800AB3AB1 /* View+Ex.swift in Sources */,
+				C27CC8702B9A3BA900AB3AB1 /* CardScrollView.swift in Sources */,
 				C27CC8602B9A305100AB3AB1 /* ButtonStyle+Ex.swift in Sources */,
 				C27CC86C2B9A368500AB3AB1 /* OnboardingViewModel.swift in Sources */,
 				C27CC86A2B9A33FD00AB3AB1 /* UINavigationController+Ex.swift in Sources */,
 				C27CC8452B9A280300AB3AB1 /* MasterView.swift in Sources */,
 				C27CC8432B9A280300AB3AB1 /* DiaryOfACEOApp.swift in Sources */,
 				C27CC8662B9A324000AB3AB1 /* UIScreen+Ex.swift in Sources */,
+				C27CC8722B9A3BB900AB3AB1 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
