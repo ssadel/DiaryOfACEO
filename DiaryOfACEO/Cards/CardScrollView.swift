@@ -14,38 +14,40 @@ struct CardScrollView: View {
     @State private var currentDragOffsetX: CGFloat = .zero
     @State private var snappedOffsetX: CGFloat = .zero
     
-    private let cardWidth: CGFloat = UIScreen.width * 0.85
-    private let spacing: CGFloat = 5
+    private let cellWidth: CGFloat = UIScreen.width * 0.85
+    private let cellSpacing: CGFloat = 5
+    private let centerX: CGFloat = UIScreen.width / 2
     private var spacingFromViewEdgeToCard: CGFloat {
-        (UIScreen.width - cardWidth) / 2
+        (UIScreen.width - cellWidth) / 2
     }
     private var maxOffsetX: CGFloat {
         distance(for: cards.count + 2)
     }
     
     var body: some View {
-        ZStack {
-            ForEach(cards) { card in
-                CardCell(card: card, width: cardWidth)
-                    .offset(x: offset(for: card))
+        ScrollView(.horizontal) {
+            HStack {
+                ForEach(cards) { card in
+                    CardCell(card: card, width: cellWidth)
+                }
             }
-            Text("WIP")
-                .foregroundStyle(.red)
-                .font(.title)
+            .offset(x: currentDragOffsetX)
+            .padding(.horizontal, spacingFromViewEdgeToCard)
         }
-        .padding(.horizontal, spacingFromViewEdgeToCard)
-        .gesture(
-            DragGesture()
-                .onChanged { v in
-                    let value = snappedOffsetX + v.translation.width
-                    guard -value > 0, -value < maxOffsetX else { return }
-                    currentDragOffsetX = value
-                }
-                .onEnded { v in
-                    snappedOffsetX = currentDragOffsetX
-                    self.activeIndex = getIndexFrom(distance: snappedOffsetX)
-                }
-        )
+        .scrollIndicators(.hidden)
+//        .scrollDisabled(true)
+//        .gesture(
+//            DragGesture()
+//                .onChanged { v in
+//                    let value = snappedOffsetX + v.translation.width
+//                    // guard -value > 0, -value < maxOffsetX else { return }
+//                    currentDragOffsetX = value
+//                }
+//                .onEnded { v in
+//                    snappedOffsetX = currentDragOffsetX
+//                    // check if next or current is closer
+//                }
+//        )
     }
     
     private func offset(for card: Card) -> CGFloat {
@@ -56,11 +58,7 @@ struct CardScrollView: View {
     }
     
     private func distance(for index: Int) -> CGFloat {
-        ((CGFloat(index) * (cardWidth + spacing))) + currentDragOffsetX
-    }
-    
-    private func getIndexFrom(distance: CGFloat) -> Int {
-        Int(distance / self.distance(for: 1))
+        ((CGFloat(index) * (cellWidth + cellSpacing))) + currentDragOffsetX
     }
 }
 

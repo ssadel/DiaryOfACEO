@@ -40,9 +40,70 @@ struct OnboardingView: View {
         .animation(.easeOut, value: viewModel.currentStep)
     }
     
-    private var cards: some View {
-        Text("TODO")
-            .frame(maxHeight: .infinity)
+    private var cards: some View { // TODO: use actual card scroll view
+        TabView(selection: $viewModel.currentStep) {
+            CardCell {
+                ZStack {
+                    RadialGradient(colors: [.black.opacity(0.8), .black], center: .center, startRadius: 30, endRadius: 300)
+                    VStack {
+                        Text("the diary of a ceo".uppercased())
+                            .font(.title.weight(.semibold))
+                        Text("conversation cards".uppercased())
+                            .font(.title2.weight(.bold))
+                    }
+                    .foregroundStyle(.white)
+                }
+            }
+            .tag(OnboardingViewModel.Step.first)
+            
+            CardCell {
+                VStack(spacing: 30) {
+                    Spacer()
+                    Text("Beyond Small Talk, Diary-Style")
+                        .font(.custom(.reenieBeenie, style: .largeTitle))
+                    Text("Immerse in authentic conversations using The Conversation Cards, featuring questions asked by accomplished guests from The Diary Of A CEO podcast.")
+                        .opacity(0.8)
+                    Spacer()
+                    Spacer()
+                }
+                .foregroundStyle(.black)
+                .padding()
+            }
+            .tag(OnboardingViewModel.Step.second)
+            
+            CardCell {
+                VStack(spacing: 30) {
+                    Spacer()
+                    Text("Prologue to Impact")
+                        .font(.custom(.reenieBeenie, style: .largeTitle))
+                    Text("Explore wisdom and experiences, turning each interaction into a heartfelt journey.")
+                        .opacity(0.8)
+                    Spacer()
+                    Spacer()
+                }
+                .foregroundStyle(.black)
+                .padding()
+            }
+            .tag(OnboardingViewModel.Step.third)
+            
+            CardCell {
+                VStack(spacing: 30) {
+                    Spacer()
+                    Text("Embrace Shared Journeys")
+                        .font(.custom(.reenieBeenie, style: .largeTitle))
+                    Text("From cherished friends to newfound connections, The Conversation Cards unfold meaningful dialogues that deepen bonds and illuminate shared journeys in any setting.")
+                        .opacity(0.8)
+                    Spacer()
+                    Spacer()
+                }
+                .foregroundStyle(.black)
+                .padding()
+            }
+            .tag(OnboardingViewModel.Step.fourth)
+        }
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .frame(maxHeight: .infinity)
+        .animation(.easeOut, value: viewModel.currentStep)
     }
     
     private var pageIndicator: some View {
@@ -61,8 +122,11 @@ struct OnboardingView: View {
     }
     
     private var nextButton: some View {
-        CapsuleButton(text: "Next") {
-            viewModel.nextStepTapped()
+        ZStack {
+            let text: String = viewModel.currentStep == .fourth ? "Start my journey" : "Next"
+            CapsuleButton(text:  text) {
+                viewModel.nextStepTapped()
+            }
         }
     }
     

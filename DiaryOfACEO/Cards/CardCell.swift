@@ -34,6 +34,7 @@ struct CardCell<Content: View>: View {
         .aspectRatio(0.7, contentMode: .fit)
         .frame(width: width)
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .multilineTextAlignment(.center)
     }
     
     @ViewBuilder

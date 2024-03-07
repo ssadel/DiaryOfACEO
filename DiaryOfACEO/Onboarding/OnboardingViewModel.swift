@@ -15,7 +15,7 @@ final class OnboardingViewModel: ObservableObject {
         case fourth
     }
     
-    @Published private(set) var currentStep: Step = .first
+    @Published var currentStep: Step = .first
     
     init() {
         print("OnboardingViewModel init")
