@@ -17,7 +17,7 @@ struct MasterView: View {
             } else if !viewModel.isLoggedIn {
                 // login view
             } else {
-                // main
+                HomeView()
             }
         }
     }
