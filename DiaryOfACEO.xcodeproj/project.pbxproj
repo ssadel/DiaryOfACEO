@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C27CC8432B9A280300AB3AB1 /* DiaryOfACEOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8422B9A280300AB3AB1 /* DiaryOfACEOApp.swift */; };
-		C27CC8452B9A280300AB3AB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8442B9A280300AB3AB1 /* ContentView.swift */; };
+		C27CC8452B9A280300AB3AB1 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8442B9A280300AB3AB1 /* MasterView.swift */; };
 		C27CC8472B9A280400AB3AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27CC8462B9A280400AB3AB1 /* Assets.xcassets */; };
 		C27CC84B2B9A280400AB3AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27CC84A2B9A280400AB3AB1 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		C27CC83F2B9A280300AB3AB1 /* DiaryOfACEO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaryOfACEO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27CC8422B9A280300AB3AB1 /* DiaryOfACEOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryOfACEOApp.swift; sourceTree = "<group>"; };
-		C27CC8442B9A280300AB3AB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C27CC8442B9A280300AB3AB1 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		C27CC8462B9A280400AB3AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C27CC8482B9A280400AB3AB1 /* DiaryOfACEO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiaryOfACEO.entitlements; sourceTree = "<group>"; };
 		C27CC84A2B9A280400AB3AB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,10 +52,10 @@
 		C27CC8412B9A280300AB3AB1 /* DiaryOfACEO */ = {
 			isa = PBXGroup;
 			children = (
-				C27CC8422B9A280300AB3AB1 /* DiaryOfACEOApp.swift */,
-				C27CC8442B9A280300AB3AB1 /* ContentView.swift */,
-				C27CC8462B9A280400AB3AB1 /* Assets.xcassets */,
-				C27CC8482B9A280400AB3AB1 /* DiaryOfACEO.entitlements */,
+				C27CC8512B9A2DB200AB3AB1 /* App */,
+				C27CC8532B9A2DDE00AB3AB1 /* Assets */,
+				C27CC8542B9A2DE700AB3AB1 /* Config */,
+				C27CC8522B9A2DC600AB3AB1 /* Views */,
 				C27CC8492B9A280400AB3AB1 /* Preview Content */,
 			);
 			path = DiaryOfACEO;
@@ -67,6 +67,38 @@
 				C27CC84A2B9A280400AB3AB1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C27CC8512B9A2DB200AB3AB1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C27CC8422B9A280300AB3AB1 /* DiaryOfACEOApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C27CC8522B9A2DC600AB3AB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C27CC8442B9A280300AB3AB1 /* MasterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C27CC8532B9A2DDE00AB3AB1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C27CC8462B9A280400AB3AB1 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C27CC8542B9A2DE700AB3AB1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C27CC8482B9A280400AB3AB1 /* DiaryOfACEO.entitlements */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C27CC8452B9A280300AB3AB1 /* ContentView.swift in Sources */,
+				C27CC8452B9A280300AB3AB1 /* MasterView.swift in Sources */,
 				C27CC8432B9A280300AB3AB1 /* DiaryOfACEOApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DiaryOfACEO/DiaryOfACEO.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DiaryOfACEO/Config/DiaryOfACEO.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DiaryOfACEO/Preview Content\"";
@@ -304,7 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DiaryOfACEO/DiaryOfACEO.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DiaryOfACEO/Config/DiaryOfACEO.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DiaryOfACEO/Preview Content\"";
