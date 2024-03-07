@@ -21,6 +21,8 @@
 		C27CC86C2B9A368500AB3AB1 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC86B2B9A368500AB3AB1 /* OnboardingViewModel.swift */; };
 		C27CC8702B9A3BA900AB3AB1 /* CardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC86F2B9A3BA900AB3AB1 /* CardScrollView.swift */; };
 		C27CC8722B9A3BB900AB3AB1 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8712B9A3BB900AB3AB1 /* CardCell.swift */; };
+		C27CC8792B9A3DFB00AB3AB1 /* ReenieBeanie-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C27CC8782B9A3DFB00AB3AB1 /* ReenieBeanie-Regular.ttf */; };
+		C27CC87C2B9A3EC600AB3AB1 /* Font+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC87B2B9A3EC600AB3AB1 /* Font+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		C27CC86B2B9A368500AB3AB1 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		C27CC86F2B9A3BA900AB3AB1 /* CardScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScrollView.swift; sourceTree = "<group>"; };
 		C27CC8712B9A3BB900AB3AB1 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		C27CC8782B9A3DFB00AB3AB1 /* ReenieBeanie-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReenieBeanie-Regular.ttf"; sourceTree = "<group>"; };
+		C27CC87A2B9A3E0F00AB3AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C27CC87B2B9A3EC600AB3AB1 /* Font+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,7 @@
 		C27CC8412B9A280300AB3AB1 /* DiaryOfACEO */ = {
 			isa = PBXGroup;
 			children = (
+				C27CC87A2B9A3E0F00AB3AB1 /* Info.plist */,
 				C27CC8512B9A2DB200AB3AB1 /* App */,
 				C27CC8532B9A2DDE00AB3AB1 /* Assets */,
 				C27CC86E2B9A3B5600AB3AB1 /* Cards */,
@@ -146,6 +152,7 @@
 		C27CC85D2B9A301800AB3AB1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C27CC8772B9A3DDC00AB3AB1 /* Fonts */,
 				C27CC85F2B9A305100AB3AB1 /* ButtonStyle+Ex.swift */,
 				C27CC8652B9A324000AB3AB1 /* UIScreen+Ex.swift */,
 				C27CC8672B9A33E800AB3AB1 /* View+Ex.swift */,
@@ -161,6 +168,15 @@
 				C27CC8712B9A3BB900AB3AB1 /* CardCell.swift */,
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		C27CC8772B9A3DDC00AB3AB1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C27CC8782B9A3DFB00AB3AB1 /* ReenieBeanie-Regular.ttf */,
+				C27CC87B2B9A3EC600AB3AB1 /* Font+Ex.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C27CC84B2B9A280400AB3AB1 /* Preview Assets.xcassets in Resources */,
+				C27CC8792B9A3DFB00AB3AB1 /* ReenieBeanie-Regular.ttf in Resources */,
 				C27CC8472B9A280400AB3AB1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +257,7 @@
 				C27CC8702B9A3BA900AB3AB1 /* CardScrollView.swift in Sources */,
 				C27CC8602B9A305100AB3AB1 /* ButtonStyle+Ex.swift in Sources */,
 				C27CC86C2B9A368500AB3AB1 /* OnboardingViewModel.swift in Sources */,
+				C27CC87C2B9A3EC600AB3AB1 /* Font+Ex.swift in Sources */,
 				C27CC86A2B9A33FD00AB3AB1 /* UINavigationController+Ex.swift in Sources */,
 				C27CC8452B9A280300AB3AB1 /* MasterView.swift in Sources */,
 				C27CC8432B9A280300AB3AB1 /* DiaryOfACEOApp.swift in Sources */,
@@ -378,6 +396,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiaryOfACEO/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -418,6 +437,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiaryOfACEO/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
