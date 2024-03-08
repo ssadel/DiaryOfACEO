@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var activeIndex: Int = 0
+    
     var body: some View {
         
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        CardScrollView(activeIndex: $activeIndex, cards: Card.sampleCards)
         
     }
 }

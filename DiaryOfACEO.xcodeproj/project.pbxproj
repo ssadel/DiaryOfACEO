@@ -25,6 +25,11 @@
 		C27CC87C2B9A3EC600AB3AB1 /* Font+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC87B2B9A3EC600AB3AB1 /* Font+Ex.swift */; };
 		C27CC87F2B9A400700AB3AB1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC87E2B9A400700AB3AB1 /* Card.swift */; };
 		C27CC8812B9A950800AB3AB1 /* Collection+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8802B9A950800AB3AB1 /* Collection+Ex.swift */; };
+		C27CC8832B9AA73800AB3AB1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8822B9AA73800AB3AB1 /* LoginView.swift */; };
+		C27CC8852B9AA7BB00AB3AB1 /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8842B9AA7BB00AB3AB1 /* ImageSource.swift */; };
+		C27CC8882B9AA99300AB3AB1 /* ServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8872B9AA99300AB3AB1 /* ServiceContainer.swift */; };
+		C27CC88A2B9AA9E100AB3AB1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8892B9AA9E100AB3AB1 /* AuthService.swift */; };
+		C27CC88C2B9AABBD00AB3AB1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC88B2B9AABBD00AB3AB1 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +54,11 @@
 		C27CC87B2B9A3EC600AB3AB1 /* Font+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ex.swift"; sourceTree = "<group>"; };
 		C27CC87E2B9A400700AB3AB1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C27CC8802B9A950800AB3AB1 /* Collection+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Ex.swift"; sourceTree = "<group>"; };
+		C27CC8822B9AA73800AB3AB1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C27CC8842B9AA7BB00AB3AB1 /* ImageSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
+		C27CC8872B9AA99300AB3AB1 /* ServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContainer.swift; sourceTree = "<group>"; };
+		C27CC8892B9AA9E100AB3AB1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C27CC88B2B9AABBD00AB3AB1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 				C27CC8562B9A2F3F00AB3AB1 /* Home */,
 				C27CC87D2B9A3FFD00AB3AB1 /* Models */,
 				C27CC8552B9A2E2500AB3AB1 /* Onboarding */,
+				C27CC8862B9AA98100AB3AB1 /* Services */,
 				C27CC85D2B9A301800AB3AB1 /* Utils */,
 				C27CC8492B9A280400AB3AB1 /* Preview Content */,
 			);
@@ -134,6 +145,8 @@
 			children = (
 				C27CC85A2B9A2FDC00AB3AB1 /* OnboardingView.swift */,
 				C27CC86B2B9A368500AB3AB1 /* OnboardingViewModel.swift */,
+				C27CC8822B9AA73800AB3AB1 /* LoginView.swift */,
+				C27CC88B2B9AABBD00AB3AB1 /* LoginViewModel.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -150,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				C27CC8632B9A314600AB3AB1 /* CapsuleButton.swift */,
+				C27CC8842B9AA7BB00AB3AB1 /* ImageSource.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -191,6 +205,15 @@
 				C27CC87E2B9A400700AB3AB1 /* Card.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C27CC8862B9AA98100AB3AB1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C27CC8872B9AA99300AB3AB1 /* ServiceContainer.swift */,
+				C27CC8892B9AA9E100AB3AB1 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,17 +290,22 @@
 				C27CC8642B9A314600AB3AB1 /* CapsuleButton.swift in Sources */,
 				C27CC8812B9A950800AB3AB1 /* Collection+Ex.swift in Sources */,
 				C27CC8582B9A2F4A00AB3AB1 /* HomeView.swift in Sources */,
+				C27CC8882B9AA99300AB3AB1 /* ServiceContainer.swift in Sources */,
 				C27CC85B2B9A2FDC00AB3AB1 /* OnboardingView.swift in Sources */,
 				C27CC8682B9A33E800AB3AB1 /* View+Ex.swift in Sources */,
+				C27CC88A2B9AA9E100AB3AB1 /* AuthService.swift in Sources */,
 				C27CC8702B9A3BA900AB3AB1 /* CardScrollView.swift in Sources */,
+				C27CC88C2B9AABBD00AB3AB1 /* LoginViewModel.swift in Sources */,
 				C27CC8602B9A305100AB3AB1 /* ButtonStyle+Ex.swift in Sources */,
 				C27CC86C2B9A368500AB3AB1 /* OnboardingViewModel.swift in Sources */,
 				C27CC87C2B9A3EC600AB3AB1 /* Font+Ex.swift in Sources */,
+				C27CC8852B9AA7BB00AB3AB1 /* ImageSource.swift in Sources */,
 				C27CC86A2B9A33FD00AB3AB1 /* UINavigationController+Ex.swift in Sources */,
 				C27CC87F2B9A400700AB3AB1 /* Card.swift in Sources */,
 				C27CC8452B9A280300AB3AB1 /* MasterView.swift in Sources */,
 				C27CC8432B9A280300AB3AB1 /* DiaryOfACEOApp.swift in Sources */,
 				C27CC8662B9A324000AB3AB1 /* UIScreen+Ex.swift in Sources */,
+				C27CC8832B9AA73800AB3AB1 /* LoginView.swift in Sources */,
 				C27CC8722B9A3BB900AB3AB1 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

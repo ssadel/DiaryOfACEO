@@ -14,10 +14,11 @@ struct CapsuleButton: View {
     }
     
     var text: String
-    var action: () -> Void
+    var imageSource: ImageSource?
     var foregroundColor: Color = .black
     var backgroundColor: Color = .white
     var widthMode: WidthMode = .minWidth()
+    var action: () -> Void
     
     var body: some View {
         Button {
@@ -29,27 +30,32 @@ struct CapsuleButton: View {
     }
     
     private var label: some View {
-        Text(text)
-            .font(.headline)
-            .foregroundStyle(foregroundColor)
-            .closure { view in
-                if case .minWidth(let width) = widthMode {
-                    view
-                        .frame(minWidth: width)
-                } else {
-                    view
-                        .frame(maxWidth: .infinity)
-                }
+        HStack {
+            if let source = imageSource {
+                source.image
             }
-            .padding(.vertical, 12)
-            .padding(.horizontal)
-            .background(
-                Capsule(style: .continuous)
-                    .fill(.white)
-            )
+            Text(text)
+        }
+        .font(.headline)
+        .foregroundStyle(foregroundColor)
+        .closure { view in
+            if case .minWidth(let width) = widthMode {
+                view
+                    .frame(minWidth: width)
+            } else {
+                view
+                    .frame(maxWidth: .infinity)
+            }
+        }
+        .padding(.vertical, 14)
+        .padding(.horizontal)
+        .background(
+            Capsule(style: .continuous)
+                .fill(.white)
+        )
     }
 }
 
 #Preview {
-    CapsuleButton(text: "textasdsadas", action: {})
+    CapsuleButton(text: "textasdsadas", imageSource: .resource(.googleLogo), action: {})
 }
