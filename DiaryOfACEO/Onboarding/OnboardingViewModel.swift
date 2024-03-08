@@ -5,7 +5,7 @@
 //  Created by Sidney Sadel on 3/7/24.
 //
 
-import Foundation
+import SwiftUI
 
 final class OnboardingViewModel: ObservableObject {
     enum Step: Int, CaseIterable {
@@ -16,6 +16,7 @@ final class OnboardingViewModel: ObservableObject {
     }
     
     @Published var currentStep: Step = .first
+    @AppStorage("didOnboardUser") var didOnboardUser: Bool = false
     
     init() {
         print("OnboardingViewModel init")
@@ -29,7 +30,7 @@ final class OnboardingViewModel: ObservableObject {
         if let nextStep = Step(rawValue: self.currentStep.rawValue + 1) {
             self.currentStep = nextStep
         } else {
-            // completed
+            didOnboardUser = true
         }
     }
     
@@ -41,6 +42,6 @@ final class OnboardingViewModel: ObservableObject {
     }
     
     func skipButtonTapped() {
-        // completed
+        didOnboardUser = true
     }
 }

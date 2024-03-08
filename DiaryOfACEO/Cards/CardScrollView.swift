@@ -15,7 +15,6 @@ struct CardScrollView: View {
     @State private var snappedOffsetX: CGFloat = .zero
     private let cellWidth: CGFloat = UIScreen.width * 0.85
     private let cellSpacing: CGFloat = 5
-    private let centerX: CGFloat = UIScreen.width / 2
     private var spacingFromViewEdgeToCard: CGFloat {
         (UIScreen.width - cellWidth) / 2
     }

@@ -9,10 +9,11 @@ import SwiftUI
 
 struct MasterView: View {
     @StateObject private var viewModel: MasterViewModel = .init()
+    @AppStorage("didOnboardUser") var didOnboardUser: Bool = false
     
     var body: some View {
         ZStack {
-            if !viewModel.didUserGetOnboarded {
+            if !didOnboardUser {
                 OnboardingView()
             } else if !viewModel.isLoggedIn {
                 // login view
@@ -20,13 +21,12 @@ struct MasterView: View {
                 HomeView()
             }
         }
-        .animation(.easeInOut, value: viewModel.didUserGetOnboarded)
+        .animation(.easeInOut, value: didOnboardUser)
         .animation(.easeInOut, value: viewModel.isLoggedIn)
     }
 }
 
 final class MasterViewModel: ObservableObject {
-    @Published private(set) var didUserGetOnboarded: Bool = false // TODO: imp
     @Published private(set) var isLoggedIn: Bool = true // TODO: imp
     
     init() {
