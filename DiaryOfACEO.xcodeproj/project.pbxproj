@@ -24,6 +24,7 @@
 		C27CC8792B9A3DFB00AB3AB1 /* ReenieBeanie-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C27CC8782B9A3DFB00AB3AB1 /* ReenieBeanie-Regular.ttf */; };
 		C27CC87C2B9A3EC600AB3AB1 /* Font+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC87B2B9A3EC600AB3AB1 /* Font+Ex.swift */; };
 		C27CC87F2B9A400700AB3AB1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC87E2B9A400700AB3AB1 /* Card.swift */; };
+		C27CC8812B9A950800AB3AB1 /* Collection+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CC8802B9A950800AB3AB1 /* Collection+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		C27CC87A2B9A3E0F00AB3AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C27CC87B2B9A3EC600AB3AB1 /* Font+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ex.swift"; sourceTree = "<group>"; };
 		C27CC87E2B9A400700AB3AB1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C27CC8802B9A950800AB3AB1 /* Collection+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				C27CC8652B9A324000AB3AB1 /* UIScreen+Ex.swift */,
 				C27CC8672B9A33E800AB3AB1 /* View+Ex.swift */,
 				C27CC8692B9A33FD00AB3AB1 /* UINavigationController+Ex.swift */,
+				C27CC8802B9A950800AB3AB1 /* Collection+Ex.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C27CC8642B9A314600AB3AB1 /* CapsuleButton.swift in Sources */,
+				C27CC8812B9A950800AB3AB1 /* Collection+Ex.swift in Sources */,
 				C27CC8582B9A2F4A00AB3AB1 /* HomeView.swift in Sources */,
 				C27CC85B2B9A2FDC00AB3AB1 /* OnboardingView.swift in Sources */,
 				C27CC8682B9A33E800AB3AB1 /* View+Ex.swift in Sources */,
